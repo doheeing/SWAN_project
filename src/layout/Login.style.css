@@ -1,0 +1,33 @@
+.login-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  font-family: "Pretendard-Regular";
+}
+.login-area div {
+  margin: 1rem;
+  text-align: center;
+}
+.login-id-password{
+    height: 2rem;
+}
+.login-icon img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.login-icon {
+  margin-top: 3rem;
+}
+.login-icon div {
+  text-align: center;
+}
+.login-area button {
+  background-color: white;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 10%;
+}

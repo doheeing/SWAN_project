@@ -1,0 +1,17 @@
+.first-page {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first-page button {
+  background-color: rgb(60, 28, 28);
+  color: white;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 40%;
+  font-family: "Pretendard-Regular";
+  font-size: 1.5rem;
+}

@@ -7,6 +7,7 @@
 }
 
 .first-page button {
+  margin-top: 3rem;
   background-color: rgb(60, 28, 28);
   color: white;
   height: 12rem;
@@ -14,4 +15,8 @@
   border-radius: 40%;
   font-family: "Pretendard-Regular";
   font-size: 1.5rem;
+}
+.first-page h3{
+    font-family: "Pretendard-Regular";
+    font-size: 1.5rem;
 }

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
   const gotoMainpage = () => {
-    navigate("/main");
+    navigate("/first");
   };
   return (
     <Container>

@@ -5,3 +5,14 @@
   font-weight: 400;
   font-style: normal;
 }
+body {
+  font-family: "Pretendard-Regular", Arial, sans-serif;
+}
+
+button {
+  font-family: "Pretendard-Regular", Arial, sans-serif;
+}
+
+input {
+  font-family: "Pretendard-Regular", Arial, sans-serif;
+}

@@ -6,30 +6,34 @@
   font-style: normal;
 }
 .header {
-    padding: 10px;
-    background-color: #f0f0f0;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "MoveSans-Bold";
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "MoveSans-Bold";
 }
-
+.header h1 {
+  text-decoration: none;
+  color: black;
+}
 .header.dark {
-    background-color: #1f1f1f;
-    color: #ffffff;
+  background-color: #1f1f1f;
+  color: #ffffff;
 }
 
 .header h1 {
-    margin: 0;
+  margin: 0;
 }
 
-.header nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: inherit;
+.header a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: inherit;
+  font-family: "LOTTERIACHAB";
+  font-weight: lighter;
 }
 
 .header nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

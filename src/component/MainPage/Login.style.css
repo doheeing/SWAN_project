@@ -10,8 +10,8 @@
   margin: 1rem;
   text-align: center;
 }
-.login-id-password{
-    height: 2rem;
+.login-id-password {
+  height: 2rem;
 }
 .login-icon img {
   width: 2rem;
@@ -30,4 +30,11 @@
   height: 2rem;
   width: 5rem;
   border-radius: 10%;
+}
+.login-icon button {
+  background: none;
+  border: none;
+}
+.login-input{
+  margin-bottom: 2rem;
 }

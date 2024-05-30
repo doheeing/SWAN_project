@@ -1,40 +1,65 @@
-import React from "react";
-import "./Login.style.css";
-import { Container } from "react-bootstrap";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Login.style.css";
 
 const Login = () => {
   const navigate = useNavigate();
-  const gotoMainpage = () => {
-    navigate("/first");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    // 로그인 처리 로직 (예: 사용자 인증)
+    navigate("/first", { state: { username: "사용자님" } });
+  };
+
+  const handleSignup = () => {
+    navigate("/signup");
   };
   return (
-    <Container>
-      <div className="login-area">
-        <div>
-          <div>아이디</div>
-          <input type="email" className="login-id-password" />
-        </div>
-        <div>
-          <div>비밀번호</div>
-          <input type="password" className="login-id-password" />
-        </div>
-        <span>
-          <input type="checkbox" />
-          <span>아이디 기억하기</span>
-        </span>
-        <div>
-          <button onClick={gotoMainpage}>로그인</button>
-        </div>
-        <span className="login-icon">
-          <div>간편 로그인</div>
-          <div>
-            <img src="https://i.namu.wiki/i/NYxZHwKfE4SLiG8DFPJn46fsdGeyf413voYGlXFvQ5YDcjnSzKWlVjz3hNW___88iE_7nLjIF6Yf8abkULq-RF4cnBTt1EqtFf0njS7USK4HwHqDWRcg2xTr-7-8l4W5XzJXPZ5bntT7VB-2-H0brw.svg" />
-            <img src="https://i.namu.wiki/i/D0d0ZZ43ul3SKWZY-fbkQ-Q0bwIBGxRL_5Z-rhb13uobs-abQ2bvFVRvsd-J1Ejo-nL2_XwgKiIUutEkU57pJr1LuNXbQx7pLQDS3J896Kj2ERMsssx_KBqDxX2Qiv9bzPRtt1s11gQhLXflujb-Uw.svg" />
-          </div>
-        </span>
+    <div className="login-area">
+      <h1>로그인</h1>
+      이름
+      <input
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        className="login-input"
+      />
+      비밀번호
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="login-input"
+      />
+      <span>
+        <input type="checkbox" />
+        <span>아이디 기억하기</span>
+      </span>
+      <div>
+        <button className="login-button" onClick={handleLogin}>
+          로그인
+        </button>
+        <button className="login-button" onClick={handleSignup}>
+          회원가입
+        </button>
       </div>
-    </Container>
+      <span className="login-icon">
+        <div>간편 로그인</div>
+        <div>
+          <button
+            onClick={() => window.open("https://www.kakaocorp.com/page/")}
+          >
+            <img src={`${process.env.PUBLIC_URL}/kakao.png`} alt="Sleep" />
+          </button>
+          <button onClick={() => window.open("www.naver.com")}>
+            <img src={`${process.env.PUBLIC_URL}/naver.svg`} alt="Sleep" />
+          </button>
+        </div>
+      </span>
+    </div>
   );
 };
 

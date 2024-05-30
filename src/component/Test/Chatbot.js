@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Chatbot.style.css";
 
 const Chatbot = () => {
@@ -9,11 +9,13 @@ const Chatbot = () => {
       text: "수면 관련 진단을 시작하겠습니다. 우선, 근무 스케줄 파일을 업로드 해주세요.",
     },
   ]);
+  const location = useLocation();
   const [inputValue, setInputValue] = useState("");
   const [step, setStep] = useState(0);
   const [uploading, setUploading] = useState(false);
   const navigate = useNavigate();
   const messagesEndRef = useRef(null);
+  const username = location.state?.username || "사용자";
 
   useEffect(() => {
     if (messagesEndRef.current) {
@@ -66,7 +68,7 @@ const Chatbot = () => {
             ...newMessages,
             {
               sender: "bot",
-              text: "이화양님의 이번달 근무 중 위험 근무는 6개 입니다.",
+              text: `${username}님의 이번달 근무 중 위험 근무는 6개 입니다.`,
             },
           ]);
           setTimeout(() => {

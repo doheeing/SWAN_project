@@ -11,6 +11,7 @@ import SolutionDetailLoadingPage from "./component/Test/SolutionDetailLoadingPag
 import SolutionDetailPage from "./component/Test/SolutionDetailPage";
 import AppLayout from "./component/Test/AppLayout";
 import FirstPage from "./component/MainPage/FirstPage";
+import Signup from "./component/MainPage/Singup";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/" element={<AppLayout />}>
         <Route index element={<Homepage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/first" element={<FirstPage />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/score" element={<Score />} />

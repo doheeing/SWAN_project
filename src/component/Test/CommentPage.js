@@ -1,20 +1,21 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./CommentPage.style.css";
 
 const CommentPage = () => {
-    const navigate = useNavigate();
-
-    const gotoSolutionPage = () => {
-      navigate("/solution");
-    };
+  const location = useLocation();
+  const navigate = useNavigate();
+  const username = location.state?.username || "사용자";
+  const gotoSolutionPage = () => {
+    navigate("/solution");
+  };
   return (
     <div className="comment-page-container">
       <div className="comment-page-content">
         <h1>수면 평가 결과</h1>
         <p>
-          아쉽게도, 당신은 꾸벅꾸벅 타입입니다. 이는 여러 가지 요인으로 인해
-          수면의 질이 좋지 않음을 의미합니다.
+          아쉽게도, {username}님은 꾸벅꾸벅 타입입니다. 이는 여러 가지 요인으로
+          인해 수면의 질이 좋지 않음을 의미합니다.
         </p>
         <div className="comment-page-content-phrase">
           <h4>수면의 질이 낮은 이유는 다음과 같을 수 있습니다</h4>

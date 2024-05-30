@@ -1,12 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareAlt, faRedo } from "@fortawesome/free-solid-svg-icons";
 import "./Score.style.css";
 
 const Score = () => {
   const navigate = useNavigate();
-
+  const location = useLocation();
+  const username = location.state?.username || "사용자님";
   const handleSolutionClick = () => {
     navigate("/solution-detail");
   };
@@ -31,7 +32,7 @@ const Score = () => {
     <div className="score-container">
       <header className="score-header">수면 분석 결과</header>
       <div className="score-message">
-        <p>이화양님의 이번달 위험근무는 총 6개 입니다.</p>
+        <p>{username}님의 이번달 위험근무는 총 6개 입니다.</p>
         <p className="tooltip">
           위험 근무란?
           <span className="tooltiptext">
@@ -46,7 +47,7 @@ const Score = () => {
         활동할 때 졸리고 수면 중에 자주 눈뜨는 당신!
         <br />
         <strong>
-          이화양님은 <span className="highlight">꾸벅꾸벅</span> 타입입니다
+          {username}은 <span className="highlight">꾸벅꾸벅</span> 타입입니다
         </strong>
       </div>
       <div className="button-group">

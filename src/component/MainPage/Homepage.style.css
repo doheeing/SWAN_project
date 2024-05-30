@@ -5,7 +5,30 @@
   justify-content: center;
   flex-direction: column;
 }
-
+.homepage {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.homepage h1 {
+  font-family: "LOTTERIACHAB";
+  font-weight: 100;
+  font-size: 4rem;
+}
+.homepage h4 {
+  font-family: "LOTTERIACHAB";
+  font-weight: 100;
+  font-size: 1rem;
+}
+.homepage h2 {
+  font-family: "MoveSans-Bold";
+  font-weight: 100;
+  font-size: 25px;
+  padding: 0 1rem;
+  text-align: center;
+}
 .first-page button {
   margin-top: 3rem;
   background-color: rgb(60, 28, 28);
@@ -16,7 +39,58 @@
   font-family: "Pretendard-Regular";
   font-size: 1.5rem;
 }
-.first-page h3{
-    font-family: "Pretendard-Regular";
-    font-size: 1.5rem;
+.first-page h3 {
+  font-family: "Pretendard-Regular";
+  font-size: 1.5rem;
+}
+.homepage button {
+  margin-top: 1rem;
+  background-color: rgb(60, 28, 28);
+  color: white;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 40%;
+  font-family: "Pretendard-Regular";
+  font-size: 1.5rem;
+}
+
+.first-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding-bottom: 4rem; /* Ensure there is space for the footer */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.footer-item p {
+  margin: 5px 0 0;
 }

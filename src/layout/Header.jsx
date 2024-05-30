@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const location = useLocation();
@@ -15,10 +17,13 @@ const Header = () => {
 
   return (
     <header className={`header ${isDarkMode ? "dark" : ""}`}>
-      <h1>SWAN</h1>
+      <h1>
+        <Link to="/">SWAN</Link>
+      </h1>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/login">
+          <FontAwesomeIcon icon={faRightToBracket} />
+        </Link>
       </nav>
     </header>
   );

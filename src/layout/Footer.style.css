@@ -1,0 +1,28 @@
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  height: 3rem; /* Adjust the height if necessary */
+  box-sizing: border-box;
+}
+
+.footer-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px; /* Adjust padding to fit within footer */
+  transition: color 0.3s;
+  height: auto; /* Ensure it fits within the footer */
+}
+
+.footer-button:hover {
+  color: #00bfff;
+}

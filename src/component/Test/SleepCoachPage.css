@@ -1,0 +1,47 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sleep-coach-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #1e1e1e; /* 다크 모드 배경 색상 */
+  color: #ffffff; /* 다크 모드 텍스트 색상 */
+  overflow-y: auto; /* 스크롤 추가 */
+}
+
+h1 {
+  text-align: center;
+}
+
+.help-button {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.coach-card {
+  background-color: #333;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.best-button,
+.quick-button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

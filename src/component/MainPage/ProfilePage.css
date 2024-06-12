@@ -1,0 +1,23 @@
+.profile-page {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1; /* 라이트 모드 배경 색상 */
+  color: #000000; /* 텍스트 색상 검은색 */
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: black; /* 버튼 텍스트 색상 검은색 */
+}

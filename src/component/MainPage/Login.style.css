@@ -1,40 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .login-area {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   font-family: "Pretendard-Regular";
+  background-color: #f0f0f0; /* 라이트 모드 배경 색상 */
+  color: #000000; /* 텍스트 색상 검은색 */
 }
+
 .login-area div {
   margin: 1rem;
   text-align: center;
 }
+
 .login-id-password {
   height: 2rem;
 }
+
 .login-icon img {
   width: 2rem;
   height: 2rem;
   margin-right: 1rem;
   margin-left: 1rem;
 }
+
 .login-icon {
   margin-top: 3rem;
 }
+
 .login-icon div {
   text-align: center;
 }
+
 .login-area button {
-  background-color: white;
+  background-color: #f0f0f0; /* 네비게이션 바와 같은 색상 */
   height: 2rem;
-  width: 5rem;
+  width: 6rem;
   border-radius: 10%;
+  border: none;
+  color: black; /* 텍스트 색상 흰색 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.login-icon button {
+.login-button {
+  border: 1px solid black !important
+}
+.login-input {
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: calc(100% - 1rem);
+  max-width: 400px;
+}
+
+.login-button-area {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-button,
+.signup-button {
+  padding: 0 1rem;
+}
+
+.icon-button {
   background: none;
   border: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
-.login-input{
-  margin-bottom: 2rem;
+
+.icon-button img {
+  width: 2rem;
+  height: 2rem;
+  border: none; /* 버튼의 테두리를 없앰 */
 }

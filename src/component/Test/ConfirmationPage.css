@@ -1,0 +1,25 @@
+.confirmation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* 다크 모드 배경 색상 */
+  text-align: center;
+  color: #ffffff; /* 다크 모드 텍스트 색상 */
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #444;
+}

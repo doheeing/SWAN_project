@@ -15,6 +15,7 @@ const Login = () => {
   const handleSignup = () => {
     navigate("/signup");
   };
+
   return (
     <div className="login-area">
       <h1>로그인</h1>
@@ -38,7 +39,7 @@ const Login = () => {
         <input type="checkbox" />
         <span>아이디 기억하기</span>
       </span>
-      <div>
+      <div className="login-button-area">
         <button className="login-button" onClick={handleLogin}>
           로그인
         </button>
@@ -50,12 +51,22 @@ const Login = () => {
         <div>간편 로그인</div>
         <div>
           <button
+            className="icon-button"
             onClick={() => window.open("https://www.kakaocorp.com/page/")}
           >
-            <img src={`${process.env.PUBLIC_URL}/kakao.png`} alt="Sleep" />
+            <img
+              src={`${process.env.PUBLIC_URL}/kakao.png`}
+              alt="Kakao Login"
+            />
           </button>
-          <button onClick={() => window.open("www.naver.com")}>
-            <img src={`${process.env.PUBLIC_URL}/naver.svg`} alt="Sleep" />
+          <button
+            className="icon-button"
+            onClick={() => window.open("https://www.naver.com")}
+          >
+            <img
+              src={`${process.env.PUBLIC_URL}/naver.svg`}
+              alt="Naver Login"
+            />
           </button>
         </div>
       </span>

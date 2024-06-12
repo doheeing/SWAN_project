@@ -1,28 +1,28 @@
-.footer-container {
+.bottom-nav-bar {
   position: fixed;
   bottom: 0;
   width: 100%;
+  background-color: #1e1e1e; /* 다크 모드 배경 색상 */
   display: flex;
   justify-content: space-around;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+.footer-item {
+  text-align: center;
+  color: #ffffff; /* 텍스트 색상 흰색 */
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
-  background-color: #1f1f1f;
-  color: #ffffff;
-  height: 3rem; /* Adjust the height if necessary */
-  box-sizing: border-box;
 }
 
-.footer-button {
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-size: 1em;
-  cursor: pointer;
-  padding: 5px; /* Adjust padding to fit within footer */
-  transition: color 0.3s;
-  height: auto; /* Ensure it fits within the footer */
+.footer-item p {
+  margin: 5px 0 0;
+  font-size: 12px;
 }
 
-.footer-button:hover {
-  color: #00bfff;
+.footer-item .active {
+  font-weight: bold;
 }

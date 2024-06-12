@@ -8,6 +8,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Homepage.style.css";
+import Footer from "../../layout/Footer";
 
 const FirstPage = () => {
   const navigate = useNavigate();
@@ -19,33 +20,14 @@ const FirstPage = () => {
   return (
     <div className="first-page">
       <div className="content">
-        <h3>안녕하세요 {username}님</h3>
+        <h3>안녕하세요 {username}</h3>
         <h3>저는 당신의 수면코치 입니다.</h3>
         <button className="main-button" onClick={gotoAuthenticate}>
           <div>수면 진단</div>
           <div>시작하기</div>
         </button>
       </div>
-
-      {/* Footer */}
-      <div className="footer">
-        <div className="footer-item">
-          <FontAwesomeIcon icon={faMoon} size="2x" />
-          <p>수면</p>
-        </div>
-        <div className="footer-item">
-          <FontAwesomeIcon icon={faChartLine} size="2x" />
-          <p>일지</p>
-        </div>
-        <div className="footer-item">
-          <FontAwesomeIcon icon={faChartBar} size="2x" />
-          <p>통계</p>
-        </div>
-        <div className="footer-item">
-          <FontAwesomeIcon icon={faUser} size="2x" />
-          <p>프로필</p>
-        </div>
-      </div>
+      <Footer />{" "}
     </div>
   );
 };

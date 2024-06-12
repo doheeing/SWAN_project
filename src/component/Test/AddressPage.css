@@ -1,0 +1,43 @@
+.address-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* 다크 모드 배경 색상 */
+}
+
+form {
+  text-align: center;
+  background-color: #1e1e1e; /* 다크 모드 배경 색상 */
+  color: #ffffff; /* 다크 모드 텍스트 색상 */
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #333; /* 다크 모드 인풋 배경 색상 */
+  color: #ffffff; /* 다크 모드 인풋 텍스트 색상 */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #444;
+}

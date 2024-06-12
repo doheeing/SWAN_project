@@ -12,6 +12,13 @@ import SolutionDetailPage from "./component/Test/SolutionDetailPage";
 import AppLayout from "./component/Test/AppLayout";
 import FirstPage from "./component/MainPage/FirstPage";
 import Signup from "./component/MainPage/Singup";
+import AddressPage from "./component/Test/AddressPage";
+import ConfirmationPage from "./component/Test/ConfirmationPage";
+import SleepCoachPage from "./component/Test/SleepCoachPage";
+import SleepContentPage from "./component/Test/SleepContentPage";
+import SleepModePage from "./component/MainPage/SleepModePage";
+import SettingsPage from "./component/MainPage/SettingsPage";
+import ProfilePage from "./component/MainPage/ProfilePage";
 
 function App() {
   return (
@@ -31,6 +38,13 @@ function App() {
           element={<SolutionDetailLoadingPage />}
         />
         <Route path="/solutiondetail" element={<SolutionDetailPage />} />
+        <Route path="/address" element={<AddressPage />} />
+        <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/sleep-coach" element={<SleepCoachPage />} />
+        <Route path="/sleep-content" element={<SleepContentPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/sleep-mode" element={<SleepModePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Route>
     </Routes>
   );

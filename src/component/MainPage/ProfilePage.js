@@ -9,12 +9,8 @@ const ProfilePage = () => {
   return (
     <div>
       <div className="profile-page">
-        <img
-          src={`${process.env.PUBLIC_URL}/profile.jpg`}
-          alt="Profile"
-          className="profile-img"
-        />
-        <h2>사용자</h2>
+
+        <h2>프로필 설정</h2>
         <button onClick={() => navigate("/submit-data")}>
           2주 데이터 제출
         </button>

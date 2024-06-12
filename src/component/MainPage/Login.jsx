@@ -19,10 +19,10 @@ const Login = () => {
   return (
     <div className="login-area">
       <h1>로그인</h1>
-      이름
+      아이디
       <input
         type="text"
-        placeholder="Username"
+        placeholder="아이디"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         className="login-input"
@@ -30,13 +30,15 @@ const Login = () => {
       비밀번호
       <input
         type="password"
-        placeholder="Password"
+        placeholder="비밀번호"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         className="login-input"
       />
-      <span>
-        <input type="checkbox" />
+      <span className="id-remember">
+        <span>
+          <input type="checkbox" />
+        </span>
         <span>아이디 기억하기</span>
       </span>
       <div className="login-button-area">
@@ -49,7 +51,7 @@ const Login = () => {
       </div>
       <span className="login-icon">
         <div>간편 로그인</div>
-        <div>
+        <div className="login-icon-button-area">
           <button
             className="icon-button"
             onClick={() => window.open("https://www.kakaocorp.com/page/")}

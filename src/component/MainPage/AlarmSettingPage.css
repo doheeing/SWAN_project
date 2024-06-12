@@ -1,0 +1,61 @@
+.alarm-setting-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.alarm-setting {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.alarm-section {
+  margin-bottom: 20px;
+}
+
+.alarm-section h3 {
+  margin-bottom: 10px;
+}
+
+.alarm-section p {
+  margin: 5px 0;
+}
+
+.time-picker-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.time-picker-row label {
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.info-text {
+  font-size: 0.8em;
+  color: gray;
+}
+
+/* DatePicker 커스텀 스타일 */
+.custom-time-picker {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  margin-left: 10px;
+}

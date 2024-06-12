@@ -8,11 +8,6 @@ const SettingsPage = () => {
 
   return (
     <div className="settings-page">
-      <img
-        src={`${process.env.PUBLIC_URL}/profile.jpg`}
-        alt="Profile"
-        className="profile-img"
-      />
       <h2>설정</h2>
       <button onClick={() => navigate("/work-schedule")}>근무표 등록</button>
       <button onClick={() => navigate("/sleep-mode")}>
@@ -24,14 +19,13 @@ const SettingsPage = () => {
       <button onClick={() => navigate("/language")}>기본언어</button>
       <button onClick={() => navigate("/general-info")}>일반 정보</button>
       <div className="toggle-switch">
-        <span>데이터 연동</span>
+        <span>데이터 연동 여부</span>
         <label className="switch">
           <input type="checkbox" />
           <span className="slider round"></span>
         </label>
-        <span>건강 앱</span>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

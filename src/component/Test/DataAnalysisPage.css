@@ -1,21 +1,25 @@
-.sleep-mode-page {
+.data-analysis-page {
   text-align: center;
   padding: 20px;
+}
+
+.analysis-section {
+  margin-bottom: 20px;
+}
+
+.analysis-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
 }
 
 button {
   display: block;
   width: 80%;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: white;
   color: black;
-}
-
-.info-text {
-  font-size: 0.8em;
-  color: gray;
-  margin-top: 20px;
 }

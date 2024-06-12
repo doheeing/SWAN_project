@@ -1,30 +1,30 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Homepage from "./component/MainPage/Homepage";
-import Login from "./component/MainPage/Login";
-import Chatbot from "./component/Test/Chatbot";
-import Score from "./component/Test/Score";
-import SolutionPage from "./component/Test/SolutionPage";
-import CommentPage from "./component/Test/CommentPage";
-import AgreementPage from "./component/Test/AgreementPage";
-import SolutionDetailLoadingPage from "./component/Test/SolutionDetailLoadingPage";
-import SolutionDetailPage from "./component/Test/SolutionDetailPage";
-import AppLayout from "./component/Test/AppLayout";
-import FirstPage from "./component/MainPage/FirstPage";
-import Signup from "./component/MainPage/Singup";
-import AddressPage from "./component/Test/AddressPage";
-import ConfirmationPage from "./component/Test/ConfirmationPage";
-import SleepCoachPage from "./component/Test/SleepCoachPage";
-import SleepContentPage from "./component/Test/SleepContentPage";
-import SleepModePage from "./component/MainPage/SleepModePage";
-import SettingsPage from "./component/MainPage/SettingsPage";
-import ProfilePage from "./component/MainPage/ProfilePage";
-import AlarmSettingPage from "./component/MainPage/AlarmSettingPage";
-import SubmitDataPage from "./component/Test/SubmitDataPage";
-import DataAnalysisPage from "./component/Test/DataAnalysisPage";
-import DataAnalysisPage2 from "./component/Test/DataAnalysisPage2";
-import DataAnalysisPage3 from "./component/Test/DataAnalysisPage3";
-import WorkSchedulePage from "./component/Test/WorkSchedulePage";
+import AppLayout from "./pages/AppLayout";
+import Homepage from "./pages/MainPage/Homepage/Homepage";
+import Login from "./pages/MainPage/Auth/Login";
+import Signup from "./pages/MainPage/Singup/Singup";
+import FirstPage from "./pages/MainPage/Homepage/FirstPage";
+import Chatbot from "./pages/Test/Chatbot/Chatbot";
+import Score from './pages/Test/Score/Score';
+import SolutionPage from './pages/Test/SolutionPage/SolutionPage';
+import CommentPage from './pages/Test/CommentPage/CommentPage';
+import AgreementPage from './pages/Test/AgreementPage/AgreementPage';
+import SolutionDetailLoadingPage from './pages/Test/SolutionDetailLoadingPage/SolutionDetailLoadingPage';
+import SolutionDetailPage from './pages/Test/SolutionDetailPage/SolutionDetailPage';
+import AddressPage from './pages/Test/AddressPage/AddressPage';
+import ConfirmationPage from './pages/Test/ConfirmationPage/ConfirmationPage';
+import SleepCoachPage from './pages/Test/SleepCoachPage/SleepCoachPage';
+import SleepContentPage from './pages/Test/SleepContentPage/SleepContentPage';
+import ProfilePage from './pages/MainPage/ProfilePage/ProfilePage';
+import SettingsPage from './pages/MainPage/SettingsPage/SettingsPage';
+import SleepModePage from './pages/MainPage/SleepModePage/SleepModePage';
+import AlarmSettingPage from './pages/MainPage/AlarmSettingPage/AlarmSettingPage';
+import SubmitDataPage from './pages/Test/SubmitDataPage/SubmitDataPage';
+import DataAnalysisPage from './pages/Test/DataAnalysisPage/DataAnalysisPage';
+import DataAnalysisPage2 from './pages/Test/DataAnalysisPage/DataAnalysisPage2';
+import DataAnalysisPage3 from './pages/Test/DataAnalysisPage/DataAnalysisPage3';
+import WorkSchedulePage from './pages/Test/WorkSchedulePage/WorkSchedulePage';
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
           element={<SolutionDetailLoadingPage />}
         />
         <Route path="/solutiondetail" element={<SolutionDetailPage />} />
-        <Route path="/address" element={<AddressPage />} />
+        <Route path="/address" element={<AddressPage/>} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
         <Route path="/sleep-coach" element={<SleepCoachPage />} />
         <Route path="/sleep-content" element={<SleepContentPage />} />
@@ -53,7 +53,7 @@ function App() {
         <Route path="/sleep-mode" element={<SleepModePage />} />
         <Route path="/day-mode" element={<AlarmSettingPage />} />
         <Route path="/evening-mode" element={<AlarmSettingPage />} />
-        <Route path="/night-mode" element={<AlarmSettingPage />} />
+        <Route path="/night-mode" element={<AlarmSettingPage/>} />
         <Route path="/submit-data" element={<SubmitDataPage />} />
         <Route path="/data-analysis" element={<DataAnalysisPage />} />
         <Route path="/data-analysis-2" element={<DataAnalysisPage2 />} />

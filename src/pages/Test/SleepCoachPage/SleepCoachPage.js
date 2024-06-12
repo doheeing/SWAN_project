@@ -1,6 +1,6 @@
 import React from "react";
 import "./SleepCoachPage.css";
-import Footer from "../../layout/Footer";
+import Footer from "../Footer/Footer";
 
 const SleepCoachPage = () => {
   return (

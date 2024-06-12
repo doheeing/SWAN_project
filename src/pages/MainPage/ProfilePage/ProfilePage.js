@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProfilePage.css";
-import Footer from "../../layout/Footer";
+import Footer from "../../../component/Footer/Footer";
 
 const ProfilePage = () => {
   const navigate = useNavigate();

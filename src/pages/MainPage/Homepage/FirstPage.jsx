@@ -8,7 +8,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Homepage.style.css";
-import Footer from "../../layout/Footer";
+import Footer from "../../../component/Footer/Footer";
 
 const FirstPage = () => {
   const navigate = useNavigate();

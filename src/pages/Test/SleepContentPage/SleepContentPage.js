@@ -1,7 +1,7 @@
 import React from "react";
 import YouTube from "react-youtube";
 import "./SleepContentPage.css";
-import Footer from "../../layout/Footer";
+import Footer from "../Footer/Footer";
 
 const SleepContentPage = () => {
   const videoOptions = {

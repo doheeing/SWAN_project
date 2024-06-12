@@ -5,25 +5,25 @@
   font-weight: 700;
   font-style: normal;
 }
+
 .header {
   padding: 10px;
   background-color: #f0f0f0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* 공간을 균등하게 분배 */
+  align-items: center; /* 요소를 수직으로 중앙에 정렬 */
   font-family: "MoveSans-Bold";
-}
-.header h1 {
-  text-decoration: none;
-  color: black;
-}
-.header.dark {
-  background-color: #1f1f1f;
-  color: #ffffff;
 }
 
 .header h1 {
+  text-decoration: none;
+  color: black;
   margin: 0;
+}
+
+.header.dark {
+  background-color: #1f1f1f;
+  color: #ffffff;
 }
 
 .header a {
@@ -32,6 +32,11 @@
   color: inherit;
   font-family: "LOTTERIACHAB";
   font-weight: lighter;
+}
+
+.header nav {
+  display: flex; /* 수평 정렬을 위한 플렉스 박스 설정 */
+  align-items: center; /* 수직으로 중앙에 정렬 */
 }
 
 .header nav a:hover {

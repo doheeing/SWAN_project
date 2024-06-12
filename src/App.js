@@ -24,6 +24,7 @@ import SubmitDataPage from "./component/Test/SubmitDataPage";
 import DataAnalysisPage from "./component/Test/DataAnalysisPage";
 import DataAnalysisPage2 from "./component/Test/DataAnalysisPage2";
 import DataAnalysisPage3 from "./component/Test/DataAnalysisPage3";
+import WorkSchedulePage from "./component/Test/WorkSchedulePage";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/data-analysis" element={<DataAnalysisPage />} />
         <Route path="/data-analysis-2" element={<DataAnalysisPage2 />} />
         <Route path="/data-analysis-3" element={<DataAnalysisPage3 />} />
+        <Route path="/work-schedule" element={<WorkSchedulePage />} />
       </Route>
     </Routes>
   );

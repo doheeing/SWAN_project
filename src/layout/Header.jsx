@@ -1,22 +1,30 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./Header.style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const location = useLocation();
-  const isDarkMode =
-    location.pathname.startsWith("/chatbot") ||
-    location.pathname.startsWith("/score") ||
-    location.pathname.startsWith("/commentPage") ||
-    location.pathname.startsWith("/solution") ||
-    location.pathname.startsWith("/agreement") ||
-    location.pathname.startsWith("/solution-detail-loading") ||
-    location.pathname.startsWith("/solution-detail");
+  const lightModePaths = [
+    "/first",
+    "/login",
+    "/settings",
+    "/profile",
+    "/submit-data",
+    "/data-analysis",
+    "/data-analysis-2",
+    "/data-analysis-3",
+    "/work-schedule",
+    "/sleep-mode",
+    "/day-mode",
+    "/evening-mode",
+    "/night-mode",
+  ];
+  const isLightMode = lightModePaths.includes(location.pathname);
 
   return (
-    <header className={`header ${isDarkMode ? "dark" : ""}`}>
+    <header className={`header ${isLightMode ? "light-mode" : "dark-mode"}`}>
       <h1>
         <Link to="/">SWAN</Link>
       </h1>
